@@ -1,0 +1,137 @@
+body,h1,h2,h3,h4,h5,h6{
+    font-weight:200;
+    font-family:-apple-system,BlinkMacSystemFont,Avenir,"Avenir Next","Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif
+}
+html{
+    box-sizing:border-box;
+    font-size:62.5%;
+    margin:0;
+    padding:0;
+	height: 100%;
+}
+body{
+    letter-spacing:.01em;
+    font-size:1.5em;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+.container{
+	max-width:100%;
+    width:100%;
+}
+.row{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-between
+}
+.row>:first-child{
+    margin-left:0
+}
+.row>:last-child{
+    margin-right:0
+}
+.col{
+    -webkit-box-flex:1;
+    -moz-box-flex:1;
+    -webkit-flex:1;
+    -ms-flex:1;
+    flex:1
+}
+.col,[class*=" col-"],[class^=col-]{
+    margin:1rem
+}
+.gradient {
+    background: #808080;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #3fada8, #808080);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #3fada8, #808080); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+}
+h1,h2,h3{
+    letter-spacing:-.1rem
+}
+h1{
+    font-size:4rem;
+    line-height:1.2;
+    color: #fff;
+}
+h3 {
+	font-size: 20px;
+	line-height: 1.2em;
+	background: #222;
+	color: #fff;
+    margin-bottom: 5px;
+	display: inline-block;
+	text-transform: uppercase;
+	-webkit-clip-path: polygon(4% 9%, 100% 0, 97% 100%, 0 100%);
+    clip-path: polygon(4% 9%, 100% 0, 97% 100%, 0 100%);
+	padding: 8px 12px 6px;
+	margin-top: 1vh;
+}
+i{
+    font-size:1.4rem;
+}
+a{
+    color:#000;
+    transition:all .1s ease;
+    font-weight:500;
+    text-decoration: none;
+}
+a:hover{
+    color:#fff;
+}
+p {
+    line-height: 1.5em;
+}
+ul{
+    list-style:circle inside;
+    padding:4px;
+    line-height: 1.5em;
+}
+ol{
+    list-style:decimal inside
+}
+.name{
+	padding-bottom: 1px;
+	-webkit-clip-path: polygon(0 0, 100% 19%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 19%, 100% 100%, 0 100%);
+    background:#000;
+    display: inline-block;
+}
+.icons{
+    width: 150px;
+    display: inline-block;
+    vertical-align: middle;
+	padding-left: 1vw;
+	letter-spacing: 10px;
+}
+#photo {
+	height: 100vh;
+	position: fixed;
+	margin-left: 10vw;
+}
+@media only screen and (max-width:767px) {
+	#photo {
+		height: auto;
+		width: 100%;
+		position: relative;
+		margin-bottom: -10px
+	}
+}
+@media screen and (max-width:768px){
+    .col,[class*=" col-"],[class^=col-]{
+        margin:0;
+        flex:0 0 100%
+    }
+}
+@media screen and (max-width:400px){
+    .hide-phone{
+        display:none
+    }
+}
+@media screen and (max-width:768px){
+    .hide-tablet{
+        display:none
+    }
+}
